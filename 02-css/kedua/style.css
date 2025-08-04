@@ -1,0 +1,69 @@
+/* Color */
+.nama-warna {
+    color: cadetblue;
+}
+
+.heksadesimal {
+    color: #00735A;
+}
+
+.rgb {
+    color: rgb(0, 51, 119);
+}
+
+.gradient {
+    color: white;
+    background: #2A7B9B;
+    background: linear-gradient(90deg, #2a7b9b 0%, rgba(106, 87, 199, 1) 50%, rgba(83, 111, 237, 1) 100%);
+}
+
+/* Background */
+.bg-color {
+    color: white;
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(106, 87, 199, 1) 50%, rgba(83, 111, 237, 1) 100%);
+}
+
+body {
+    background-image: url(wp.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+}
+
+/* Text Formatting */
+.text-format {
+    background-color: wheat;
+}
+
+.kanan {
+    text-align: right;
+}
+
+.kiri {
+    text-align: left;
+}
+
+.tengah {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.none {
+    text-decoration: none;
+}
+
+.delete {
+    text-decoration: line-through;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.overline {
+    text-decoration: overline;
+}
