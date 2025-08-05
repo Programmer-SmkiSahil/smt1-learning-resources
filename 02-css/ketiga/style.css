@@ -20,7 +20,7 @@
 }
 
 .family {
-    font-family: "Courier New", Courier, monospace;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 /* Border */
@@ -58,8 +58,8 @@
     font-size: 1.5rem;
 }
 .percent {
-    font-size: 150%;
+    font-size: 100%;
 }
 .viewport {
-    font-size: 5vw; /* 5% of the viewport width */
+    font-size: 5vw;
 }
