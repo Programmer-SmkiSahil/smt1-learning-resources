@@ -1,0 +1,31 @@
+.container {
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    align-items: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+/* flex-direction untuk megatur arah */
+/* justify untuk mengatur posisi vertikal*/
+/* align-items mengatur posisi sesuai flex-direction*/
+/* gap untuk mengatur jarak */
+/* wrap untuk mengatur kalau item tidak muat di satu baris */
+
+.item {
+    flex: 1 1 100px;
+    align-self: flex-end;
+    order: 1;
+    width: 100px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    background-color:goldenrod;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+/* flex untuk mengatur ukuran item */
+/* align-self untuk mengatur posisi item */
+/* order untuk mengatur urutan item */

@@ -1,0 +1,81 @@
+/* Padding */
+.padding {
+    border: 1px solid red;
+}
+
+.top {
+    border: 1px solid red;
+    padding-top: 10px;
+}
+
+.right {
+    border: 1px solid red;
+    text-align: right;
+    padding-right: 15px;
+}
+.bottom {
+    border : 1px solid red;
+    padding-bottom: 10px;
+}
+.left {
+    border: 1px solid red;
+    text-align: left;
+    padding-left: 15px;
+}
+.all {
+    border: 1px solid red;
+    padding: 90px;
+}
+
+.two-value {
+    border: 1px solid red;
+    padding: 20px 80px;
+}
+
+.three-value {
+    border: 1px solid red;
+    padding: 20px 35px 70px;
+}
+
+/* Margin */
+.margin {
+    border: 1px solid red;
+}
+
+.m-top {
+    border: 1px solid red;
+    margin-top: 10px;
+}
+
+.m-right {
+    border: 1px solid red;
+    text-align: right;
+    margin-right: 15px;
+}
+.m-bottom {
+    border : 1px solid red;
+    margin-bottom: 10px;
+}
+.m-left {
+    border: 1px solid red;
+    text-align: left;
+    margin-left: 15px;
+}
+.m-auto {
+    border: 1px solid red;
+    margin: auto;
+}
+.m-all {
+    border: 1px solid red;
+    margin: 90px;
+}
+
+.m-two-value {
+    border: 1px solid red;
+    margin: 20px 80px;
+}
+
+.m-three-value {
+    border: 1px solid red;
+    margin: 20px 35px 70px;
+}

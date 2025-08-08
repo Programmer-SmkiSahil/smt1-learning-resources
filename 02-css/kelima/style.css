@@ -1,0 +1,72 @@
+/* Display Visible */
+.block {
+    background-color: lightskyblue;
+    display: block;
+    width: 200px;
+}
+.inline {
+    background-color: mediumorchid;
+    display: inline;
+    width: 200px;
+}
+.inline-block {
+    background-color: maroon;
+    display: inline-block;
+    width: 200px;
+}
+.none {
+    display: none;
+}
+.visible {
+    background-color: aqua;
+    visibility: visible;
+}
+.hidden {
+    background-color: chocolate;
+    visibility: hidden;
+}
+/* Position Float */
+.static {
+    position: static;
+}
+.relative {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    text-align: center;
+    line-height: 100px;
+}
+.absolute {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 10px;
+    background-color: lightcoral;
+}
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 10px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    margin: 5px;
+}
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    margin: 20px;
+}
+/* Float */
+.float {
+    float: left;
+    margin: 10px;
+}
