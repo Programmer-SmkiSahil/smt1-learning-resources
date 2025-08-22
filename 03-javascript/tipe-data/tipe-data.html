@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tipe Data</title>
 </head>
 <body>
     <script>
@@ -20,6 +20,46 @@
         document.writeln("Ini tipe data String:")
         document.writeln("AbCdEfG1234567\n")
         document.writeln("\"AbCdEfG\\1234567\n\"")
+
+        document.writeln("</br>")
+        document.writeln("</br>")
+        
+        // Konversi Tipe Data
+        const x = "1"
+        const y = 1
+        const z = "ABC DEF GEH IJK"
+        const convert = parseInt(x)
+        const convert2 = Number(x)
+        const convert3 = String(y)
+        const nan = parseInt(z)
+        
+        document.writeln(convert + y)
+        document.writeln(convert3 + x)
+        document.writeln(nan)
+        
+        document.writeln("</br>")
+        document.writeln("</br>")
+        
+        // Array
+        let array = ["Roja", "Rey", "Gapin", "Imran", "Dapa"]
+        array.push("Farhan")
+        delete array[5]
+        document.writeln(array)
+        document.writeln(array[6])
+        document.writeln(array.length)
+        
+        document.writeln("</br>")
+
+        // Object
+        const tubuh = {
+            atas: "kepala",
+            tengah: "badan",
+            bawah: "kaki",
+        }
+        document.writeln(tubuh.atas)
+        document.writeln(tubuh.tengah)
+        document.writeln(tubuh.bawah)
+
     </script>
 </body>
 </html>
