@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert</title>
+</head>
+<body>
+    <script>
+        // Untuk memunculkan popup peringatan
+        alert("Halo CIL")
+
+        // Untuk memunculkan popup yang meminta input
+        const nama = prompt("Siapa nama kamu?")
+        document.writeln(`Halo ${nama}`)
+
+        // Untuk memunculkan popup yang meminta konfirmasi
+        const masuk = confirm("Mau Masuk")
+        if (masuk) {
+            document.writeln(`Selamat Datang ${nama}`)
+        } else {
+            document.writeln(`Ngapain masuk ${nama}`)
+        }
+    </script>
+</body>
+</html>

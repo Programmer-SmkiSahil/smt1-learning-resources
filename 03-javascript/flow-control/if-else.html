@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If - Else</title>
+</head>
+
+<body>
+    <script>
+        const hasilUjian = 30
+
+        if (hasilUjian >= 80) {
+            document.writeln("Kamu Lulus")
+        } else {
+            document.writeln("Kamu Tidak Lulus")
+        }
+
+        let hujan = false
+        if (hujan) {
+            document.writeln("Bawa Payung!")
+        } else {
+            document.writeln("Ngapain Bawa Payung")
+        }
+
+        document.writeln("</br>")
+
+        let angka = 7
+        let tebakan = 7
+
+        if (tebakan === angka) {
+            document.writeln("Tebakanmu Benar")
+        } else if (tebakan > angka) {
+            document.writeln("Angka Terlalu Besar")
+        } else {
+            document.writeln("Angka Terlalu Kecil")
+        }
+
+        let mm = ["Miya", "Natan", "Lesley"]
+        let mage = ["Nana", "Vale", "Cecil"]
+        let assassin = ["Fanny", "Ryze", "Diana"]
+        let tank = ["Tigreal", "Xayah", "Caitlyn"]
+
+        let heroPilihan = "Tigreal"
+        if (mm.includes(heroPilihan)) {
+            document.writeln("Kamu Rolenya MM")
+        } else if (mage.includes(heroPilihan)) {
+            document.writeln("Kamu Rolenya Mage")
+        } else if (assassin.includes(heroPilihan)) {
+            document.writeln("Kamu Rolenya Assassin")
+        } else if (tank.includes(heroPilihan)) {
+            document.writeln("Kamu Rolenya Tank")
+        } else {
+            document.writeln("Kamu Rolenya Fighter")
+        }
+    </script>
+</body>
+
+</html>
