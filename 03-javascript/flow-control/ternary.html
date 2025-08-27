@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary</title>
+</head>
+<body>
+    <script>
+        // Ini if else biasa
+        const nilai = 75
+        let hasil
+        if (nilai > 70) {
+            hasil = "A"
+        } else {
+            hasil = "B"
+        }
+        document.writeln(`Hasil ulangan Anda : ${hasil}`)
+
+        // Ini ternary
+        // Ternary lebih simple dari if else
+        // Bagian pertama itu pengecekan kondisi, lalu tanda tanya (?) dan bagian kedua itu hasilnya, lalu titik dua (:) dan bagian ketiga itu hasilnya jika else(tidak memenuhi pengecekan).
+        const n = 90
+        let h = n > 70 ? "A" : "B"
+        document.writeln(`Hasil ulangan Anda : ${h}`)
+    </script>
+</body>
+</html>
