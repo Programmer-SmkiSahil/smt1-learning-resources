@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
+        let n = 5;
+
+        for (let i = 1; i <= n; i++) {
+            let spasi = " ".repeat(n - i);
+            let bintang = "* ".repeat(i);
+            document.writeln(spasi + bintang);
+        }
+
+
+
         let passwordBenar = 1234
         let passwordUser = 1234
         let cekLogin = passwordUser == passwordBenar ? "Berhasil Login" : "Gagal Login"
         document.writeln(cekLogin)
     </script>
 </body>
+
 </html>
