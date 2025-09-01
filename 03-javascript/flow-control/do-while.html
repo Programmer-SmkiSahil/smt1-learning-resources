@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do - While</title>
+</head>
+<body>
+    <script>
+        // Do-While adalah perulangan yang mirip While, tapi bedanya adalah While melakukan pengecekan baru menjalankan kode, kalau Do-While menjalankan dulu baru dicek
+        let i = 1
+        do {
+            document.writeln(`Angka : ${i}`)
+            document.writeln("</br>")
+            i++
+        } while (i <= 10)
+
+        let angka
+        do {
+            angka = prompt("Masukkan angka (0 untuk berhenti mengulang)")
+            document.writeln("Kamu memasukkan angka :" + angka + "</br>")
+        } while (angka != 0)
+
+        let mundur = 10
+        do {
+            document.writeln("Hitung Mundur:" + mundur + "</br>")
+            mundur--
+        } while (mundur > 0)
+
+        let password
+        do {
+            password = prompt("Masukkan Password")
+        } while (password != 1234);
+        alert("Password Benar")
+    </script>
+</body>
+</html>

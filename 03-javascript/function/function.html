@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        // Function merupakan kode perintah yang kita buat sendiri
+        // Function dapat dipanggil berkali-kali
+        // Function juga bisa disebut dengan method
+        // Function tidak dijalankan sebelum dipanggil
+        function menyapa() {
+            document.writeln("Halo Dunia!")
+        }
+        menyapa()
+
+        document.writeln("</br>")
+
+        // Di dalam function kita bisa menambahkan parameter untuk mengirimkan data
+        // Parameter bisa lebih dari satu
+        function tambah(angka1, angka2, angka3) {
+            document.writeln(angka1 + angka2 + angka3)
+        }
+        tambah(12830721083, 9830921380, 9182372183)
+
+        document.writeln("</br>")
+        
+        // Function juga bisa mengembalikan nilai
+        // Pengembalian nilai ditulis dengan kata kunci return
+        function kali(a, b) {
+            return a * b
+        }
+        document.writeln(kali(2, 3))
+    </script>
+</body>
+</html>

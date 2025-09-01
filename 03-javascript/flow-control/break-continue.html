@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break dan Continue</title>
+</head>
+<body>
+    <script>
+        // Break digunakan untuk menghentikan program
+        // Continue digunakan untuk melanjutkan program selanjutnya
+        let counter = 1
+        while (true) {
+            document.writeln(`Perulangan ke- ${counter}`)
+            document.writeln("</br>")
+            counter++
+            if (counter > 10) {
+                break
+            }
+        }
+        
+
+        for (let i = 1; i <= 20; i++) {
+            if (i % 2 == 0) {
+                continue
+            }
+            document.writeln(`Perulangan Ganjil ke- ${i}`)
+            document.writeln("</br>")
+        }
+
+    </script>
+</body>
+</html>
