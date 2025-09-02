@@ -12,6 +12,23 @@
         // REST PARAMETER
         // ANONYMOUS FUNCTION
         // ARROW FUNCTION
+        function greet(name) {
+            return `Hello, ${name}!`;
+        }
+        console.log(greet("Alice"));
+
+        function sum(...numbers) {
+            return numbers.reduce((total, num) => total + num, 0);
+        }
+        console.log(sum(1, 2, 3, 4, 5));
+
+        const multiply = function(a, b) {
+            return a * b;
+        };
+        console.log(multiply(3, 4));
+
+        const divide = (a, b) => a / b;
+        console.log(divide(10, 2));
     </script>
 </body>
 </html>
