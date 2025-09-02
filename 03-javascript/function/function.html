@@ -33,6 +33,20 @@
             return a * b
         }
         document.writeln(kali(2, 3))
+
+        // Optional Parameter
+        // Parameter yang tidak diisi akan bernilai undefined
+        function namamu(awal, akhir) {
+            document.writeln(awal + akhir)
+        }
+        namamu("Sahroni ")
+
+        // Default Parameter adalah parameter yang diisi sebelum digunakan
+        // Default Parameter valuenya bisa diganti
+        function gue(nama, gender = "Laki"){
+            document.writeln("gue " + nama + "dan gue " + gender)
+        }
+        gue("Uya ")
     </script>
 </body>
 </html>

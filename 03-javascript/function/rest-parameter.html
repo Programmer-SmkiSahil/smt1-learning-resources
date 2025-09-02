@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function 2</title>
+</head>
+<body>
+    <script>
+        // Rest Parameter digunakan untuk menyimpan banyak data pada satu parameter
+        // Rest Parameter hanya boleh ada satu dalam satu function
+        // Rest Parameter harus di posisi paling akhir dari parameter-parameter
+        function sum(jenis, ...macam) {
+            document.writeln(jenis)
+            document.writeln("</br>")
+            for (let i = 0; i < macam.length; i++) {
+                document.writeln(macam[i])
+            }
+        }
+        sum("Buah", "Timun", "Tomat", "Wortel", "Lobak", "Apel", "Kacang")
+
+        document.writeln("</br>")
+        document.writeln("</br>")
+
+        // Spread Syntax digunakan untuk memecah array menjadi parameter
+        let sayur = ["Kol", "Tomat", "Wortel", "Lobak"]
+        sum("Sayur", ...sayur)
+    </script>
+</body>
+</html>
