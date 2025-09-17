@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+</head>
+
+<body>
+    <!-- Form Events -->
+    <form id="myForm">
+        <input type="text" id="nameInput" placeholder="Masukkan nama">
+        <select id="mySelect">
+            <option value="GAADA VALUE">Pilih warna</option>
+            <option value="MUEARAH">Merah</option>
+            <option value="biru">Biru</option>
+        </select>
+        <button type="submit">Kirim</button>
+    </form>
+    <p id="formOutput">Status: -</p>
+
+    <script>
+        const form = document.getElementById('myForm');
+        const nameInput = document.getElementById('nameInput');
+        const select = document.getElementById('mySelect');
+        const formOutput = document.getElementById('formOutput');
+
+        // Event submit
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Cegah reload halaman
+            formOutput.textContent = 'Status: Form dikirim!';
+        });
+
+        // Event change
+        select.addEventListener('change', function (event) {
+            formOutput.textContent = `Status: Pilihan berubah menjadi ${event.target.value}`;
+        });
+
+        // Event focus
+        nameInput.addEventListener('focus', function () {
+            formOutput.textContent = 'Status: Input mendapat fokus';
+            nameInput.style.backgroundColor = 'lightyellow';
+        });
+
+        // Event blur
+        nameInput.addEventListener('blur', function () {
+            formOutput.textContent = 'Status: Input kehilangan fokus';
+            nameInput.style.backgroundColor = 'white';
+        });
+    </script>
+</body>
+
+</html>

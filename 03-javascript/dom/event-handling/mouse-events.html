@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+</head>
+
+<body>
+    <!-- Mouse events -->
+    <button id="myButton">Klik Saya!</button>
+    <div id="myDiv" style="width: 200px; height: 100px; background-color: blue; color: white;">
+        Arahkan mouse ke sini
+    </div>
+    <p id="output">Status: -</p>
+
+    <script>
+        const button = document.getElementById('myButton');
+        const div = document.getElementById('myDiv');
+        const output = document.getElementById('output');
+
+        // Event click
+        button.addEventListener('click', function () {
+            output.textContent = 'Status: Tombol diklik!';
+        });
+
+        // Event double-click
+        button.addEventListener('dblclick', function () {
+            output.textContent = 'Status: Tombol diklik dua kali!';
+        });
+
+        // Event mouseover
+        div.addEventListener('mouseover', function () {
+            div.style.backgroundColor = 'red';
+            output.textContent = 'Status: Mouse masuk ke div!';
+        });
+
+        // Event mouseout
+        div.addEventListener('mouseout', function () {
+            div.style.backgroundColor = 'blue';
+            output.textContent = 'Status: Mouse keluar dari div!';
+        });
+
+        // Event mousemove
+        div.addEventListener('mousemove', function (event) {
+            output.textContent = `Status: Mouse di posisi X: ${event.clientX}, Y: ${event.clientY}`;
+        });
+    </script>
+</body>
+
+</html>

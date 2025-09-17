@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Events</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates illo sapiente pariatur porro tempora vitae, dolor repudiandae praesentium autem incidunt dolorem voluptatibus libero, hic dicta atque laboriosam vero ratione corrupti earum est ex. Exercitationem id quaerat quia harum molestiae perspiciatis nisi inventore laboriosam officia nemo facilis omnis voluptatem commodi totam, minus reprehenderit! Suscipit aut culpa ullam unde quisquam magnam quas praesentium reprehenderit mollitia facilis, nihil totam delectus molestias consectetur nobis corrupti recusandae perferendis debitis eos, cum nostrum porro voluptatum voluptatibus itaque. Maiores ex quos, minus atque in quaerat est recusandae aliquam modi architecto? Deleniti deserunt culpa eaque, nulla neque velit distinctio ex? Quis voluptates iusto saepe autem ab porro! Voluptates amet quos consequuntur, expedita error atque assumenda. Ipsum necessitatibus iure quos, repudiandae nesciunt alias laborum nemo adipisci quae tempora ea rerum quasi, dicta maiores eligendi earum sapiente, quibusdam dolor illo asperiores assumenda quidem minima impedit. Mollitia necessitatibus vel temporibus natus beatae iure accusantium amet fugit id enim ipsa consequatur ut ducimus labore nemo perspiciatis corporis, odio dolorum esse eos modi? Nisi similique at dicta expedita. Voluptate, delectus alias corporis commodi eum beatae non repellat est nulla maxime optio, laboriosam dolorem iste repudiandae iure? Itaque, iste. Porro obcaecati ipsum doloremque sed.</p>
+    <!-- Window Events -->
+    <p id="windowOutput">Status: -</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas numquam vel totam unde explicabo, ea repudiandae hic? Quas sit facere quod magnam eaque velit distinctio nemo unde voluptates modi quae tempore, deleniti est, aspernatur voluptatum quam laborum. Sit, sapiente dolores tenetur maxime quaerat accusamus aut! Perspiciatis officia, ad aut magnam mollitia animi neque officiis nisi voluptates temporibus fuga illo unde earum consequatur soluta vel, illum explicabo repudiandae facere rem modi sint quia aliquid. Ut nihil, nobis cumque, a, debitis dolorem aut perferendis aperiam distinctio impedit recusandae ex assumenda pariatur ratione iste dicta vel labore quaerat tempore. Dolores officia voluptatem mollitia?</p>
+
+
+    <script>
+        const windowOutput = document.getElementById('windowOutput');
+
+        // Event load
+        window.addEventListener('load', function () {
+            windowOutput.textContent = 'Status: Halaman selesai dimuat!';
+        });
+
+        // Event resize
+        window.addEventListener('resize', function () {
+            windowOutput.textContent = `Status: Ukuran jendela: ${window.innerWidth} x ${window.innerHeight}`;
+        });
+
+        // Event scroll
+        window.addEventListener('scroll', function () {
+            windowOutput.textContent = `Status: Halaman digulir ke posisi Y: ${window.scrollY}`;
+        });
+    </script>
+</body>
+
+</html>

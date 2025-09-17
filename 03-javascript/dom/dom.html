@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="myHead">Selamat Datang</h1>
+    <p class="myParag">Ini Paragraf Pertama</p>
+    <p class="myParag">Ini Paragraf Kedua</p>
+    <div id="myDiv">Hallo Dunia!</div>
+    
+    <script>
+        // DOM (Document Object Model)
+        // DOM digunakan untuk interaktifitas dengan elemen HTML
+
+        // 1. Mengakses Elemen dengan ID
+        const heading = document.getElementById("myHead")
+        console.log(heading.textContent)
+
+        // 2. Mengakses Elemen dengan Class
+        const p = document.getElementsByClassName("myParag")
+        console.log(p[1].textContent)
+
+        // 3. Mengakses Elemen dengan Query Selector
+        const div = document.querySelector("#myDiv")
+        console.log(div.textContent)
+
+        // 4. Mengakses Elemen dengan querySelectorAll
+        const allParag = document.querySelectorAll(".myParag")
+        allParag.forEach(p => console.log(p.textContent))
+
+    </script>
+</body>
+</html>

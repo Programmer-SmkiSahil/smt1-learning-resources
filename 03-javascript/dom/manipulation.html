@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    
+    <p id="myText">Teks Awal</p>
+    <button id="myButton">Ubah Teks</button>
+
+    <br>
+    <br>
+
+    <img id="myImage" src="gambar.png" alt="" style="width: 25%;">
+    <br>
+    <button id="changeImage">Ganti Gambar</button>
+
+    <br>
+    <br>
+
+    <div id="myBox" style="width: 100px; height: 100px; background-color: red;"></div>
+    <br>
+    <button id="changeStyle">Ubah Style Box</button>
+
+    <br>
+    <br>
+
+    <div class="container">
+        <p>Paragraf</p>
+    </div>
+    <br>
+    <button id="addPara">Tambah Paragraf</button>
+    <button id="removePara">Hapus Paragraf</button>
+
+    <script>
+        // Memanipulasi Elemen
+        const text = document.getElementById("myText")
+        const button = document.getElementById("myButton")
+
+        button.addEventListener("click", function() {
+            text.textContent = "Teks Telah Diubah"
+            text.style.color = "blue"
+            text.style.fontSize = "20px"
+        })
+
+        // Memanipulasi Atribut
+        const img = document.getElementById("myImage")
+        const changeImage = document.getElementById("changeImage")
+
+        changeImage.addEventListener("click", function() {
+            img.setAttribute("src", "gambar2.jpg")
+        })
+
+        // Memanipulasi Style
+        const box = document.getElementById("myBox")
+        const changeStyle = document.getElementById("changeStyle")
+
+        changeStyle.addEventListener("click", function() {
+            box.style.backgroundColor = "green"
+            box.style.width = "200px"
+            box.style.height = "200px"
+        })
+
+        // Menambah dan Menghapus Elemen
+        const container = document.querySelector(".container")
+        const addPara = document.getElementById("addPara")
+        const removePara = document.getElementById("removePara")
+
+        addPara.addEventListener("click", function() {
+            const newPara = document.createElement("p")
+            newPara.textContent = "Paragraf Baru"
+            container.appendChild(newPara)
+        })
+
+        removePara.addEventListener("click", function() {
+            const lastPara = container.querySelector("p:last-child")
+            if (lastPara) {
+                container.removeChild(lastPara)
+            }
+        })
+    </script>
+</body>
+</html>

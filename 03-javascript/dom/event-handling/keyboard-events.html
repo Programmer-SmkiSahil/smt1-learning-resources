@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events</title>
+</head>
+
+<body>
+    <!-- Keyboard Events -->
+    <input type="text" id="myInput" placeholder="Ketik di sini">
+    <p id="keyOutput">Tombol: -</p>
+
+    <script>
+        const input = document.getElementById('myInput');
+        const keyOutput = document.getElementById('keyOutput');
+
+        // Event keydown
+        input.addEventListener('keydown', function (event) {
+            keyOutput.textContent = `Tombol: ${event.key} (keydown)`;
+        });
+
+        // Event keyup
+        input.addEventListener('keyup', function (event) {
+            keyOutput.textContent = `Tombol: ${event.key} (keyup)`;
+        });
+    </script>
+</body>
+
+</html>
