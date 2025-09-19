@@ -36,4 +36,35 @@ var_dump(true or false) . PHP_EOL; // OR
 var_dump(true xor false) . PHP_EOL; // XOR
 var_dump(!true) . PHP_EOL; // NOT
 
+// Increment and Decrement
+$angka = 10;
+echo ++$angka . PHP_EOL; // Tambah dan Kembalikan Nilai
+echo $angka++ . PHP_EOL; // Kembalikan Nilai dan Tambah
+echo --$angka . PHP_EOL; // Kurang dan Kembalikan Nilai
+echo $angka-- . PHP_EOL; // Kembalikan Nilai dan Kurang
+echo $angka . PHP_EOL;
+
+// Operator Array
+$buah = [
+    "nama" => "Apel",
+    "warna" => "Merah",
+    "harga" => 5000
+];
+$buah2 = [
+    "nama" => "Apel",
+    "warna" => "Merah",
+    "harga" => 5000
+];
+var_dump($buah == $buah2) . PHP_EOL; // Sama key, value
+var_dump($buah === $buah2) . PHP_EOL; // Sama key, value, posisi
+var_dump($buah != $buah2) . PHP_EOL; // Tidak Sama key, value
+var_dump($buah <> $buah2) . PHP_EOL; // Tidak Sama key, value
+
+$depan = [
+    "depan" => "Eko"
+];
+$belakang = [
+    "belakang" => "Patrio"
+];
+var_dump($depan + $belakang) . PHP_EOL; // Gabungan
 ?>
