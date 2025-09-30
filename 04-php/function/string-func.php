@@ -17,3 +17,4 @@ var_dump(strtoupper("fazle gavin laiQ"));
 
 
 
+$rey = "reysa";

@@ -11,6 +11,8 @@ function halo() {
 function haloNama($nama) {
     echo "Halo $nama" . PHP_EOL;
 }
+
+
 haloNama("Musa");
 
 // Default Parameter
